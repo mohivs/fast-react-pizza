@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import CreateUser from "../features/user/CreateUser";
-import { updteName } from "../features/user/userSlice";
+// import { updateName } from "../features/user/userSlice";
 import Button from "./Button";
 
 function Home() {

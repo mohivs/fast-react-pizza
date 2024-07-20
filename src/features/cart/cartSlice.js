@@ -67,5 +67,8 @@ export const getTotalCartPrice = (store) =>
     0
   );
 
+  //const getCurrentQuantityById = function(id){
+  // (store)=> store.cart.cart.find((item) => item.pizzaId === id)?.quantity ?? 0;
+  // }
 export const getCurrentQuantityById = (id) => (store) =>
   store.cart.cart.find((item) => item.pizzaId === id)?.quantity ?? 0;

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Button from "../../ui/Button";
 import { useDispatch } from "react-redux";
-import { updteName } from "./userSlice";
+import { updateName } from "./userSlice";
 import { useNavigate } from "react-router-dom";
 
 function CreateUser() {
@@ -12,7 +12,7 @@ function CreateUser() {
   function handleSubmit(e) {
     e.preventDefault();
     if (!username) return;
-    dispatch(updteName(username));
+    dispatch(updateName(username));
     navigate("/menu");
   }
 
